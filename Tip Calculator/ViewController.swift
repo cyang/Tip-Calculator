@@ -21,6 +21,15 @@ class ViewController: UIViewController {
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
         
+//        calculateTipAndTotal()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let index = defaults.integerForKey("index")
+        
+        
+        tipControl.selectedSegmentIndex = index
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,6 +49,10 @@ class ViewController: UIViewController {
         totalLabel.text = String(format: "$%.2f", total)
         
     }
+//    
+//    func calculateTipAndTotal(){
+//        
+//    }
 
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true)
