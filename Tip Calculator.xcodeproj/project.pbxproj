@@ -15,6 +15,7 @@
 		DD6689381C1A47C900ABF4B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD6689361C1A47C900ABF4B8 /* LaunchScreen.storyboard */; };
 		DD6689431C1A47CA00ABF4B8 /* Tip_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6689421C1A47CA00ABF4B8 /* Tip_CalculatorTests.swift */; };
 		DD66894E1C1A47CA00ABF4B8 /* Tip_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD66894D1C1A47CA00ABF4B8 /* Tip_CalculatorUITests.swift */; };
+		DD66895C1C1A6A1C00ABF4B8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD66895B1C1A6A1C00ABF4B8 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		DD6689491C1A47CA00ABF4B8 /* Tip CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tip CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD66894D1C1A47CA00ABF4B8 /* Tip_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip_CalculatorUITests.swift; sourceTree = "<group>"; };
 		DD66894F1C1A47CA00ABF4B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD66895B1C1A6A1C00ABF4B8 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				DD66892A1C1A47C900ABF4B8 /* AppDelegate.swift */,
 				DD66892C1C1A47C900ABF4B8 /* ViewController.swift */,
 				DD66892E1C1A47C900ABF4B8 /* Main.storyboard */,
+				DD66895B1C1A6A1C00ABF4B8 /* SettingsViewController.swift */,
 				DD6689341C1A47C900ABF4B8 /* Assets.xcassets */,
 				DD6689361C1A47C900ABF4B8 /* LaunchScreen.storyboard */,
 				DD6689391C1A47C900ABF4B8 /* Info.plist */,
@@ -262,6 +265,7 @@
 				DD66892D1C1A47C900ABF4B8 /* ViewController.swift in Sources */,
 				DD6689331C1A47C900ABF4B8 /* Tip_Calculator.xcdatamodeld in Sources */,
 				DD66892B1C1A47C900ABF4B8 /* AppDelegate.swift in Sources */,
+				DD66895C1C1A6A1C00ABF4B8 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
