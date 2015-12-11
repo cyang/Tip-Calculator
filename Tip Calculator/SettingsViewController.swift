@@ -48,7 +48,7 @@ class SettingsViewController: UIViewController, UIPickerViewDataSource,UIPickerV
         let defaults = NSUserDefaults.standardUserDefaults()
         let index = defaults.integerForKey("index")
         
-        percentagePicker.selectRow(index, inComponent: 0, animated: false)
+        percentagePicker.selectRow(index, inComponent: 0, animated: true)
     }
     
 

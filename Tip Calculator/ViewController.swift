@@ -20,16 +20,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
-        
-//        calculateTipAndTotal()
-    }
+        }
     
     override func viewDidAppear(animated: Bool) {
         let defaults = NSUserDefaults.standardUserDefaults()
         let index = defaults.integerForKey("index")
         
-        
+        var tipPercentages = [0.15, 0.2, 0.22]
         tipControl.selectedSegmentIndex = index
+
+        calculateTipAndTotal(tipPercentages[index])
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,18 +41,18 @@ class ViewController: UIViewController {
         var tipPercentages = [0.15, 0.2, 0.22]
         let percentage = tipPercentages[tipControl.selectedSegmentIndex]
         
+        calculateTipAndTotal(percentage)
+        
+    }
+    
+    func calculateTipAndTotal(percentage: Double){
         let billAmount = NSString(string: billField.text!).doubleValue
         let tip = billAmount * percentage
         let total = tip + billAmount
         
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
-        
     }
-//    
-//    func calculateTipAndTotal(){
-//        
-//    }
 
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true)
