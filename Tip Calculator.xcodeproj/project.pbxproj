@@ -199,6 +199,7 @@
 				TargetAttributes = {
 					DD6689261C1A47C900ABF4B8 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = F59YKF5ZPA;
 					};
 					DD66893D1C1A47CA00ABF4B8 = {
 						CreatedOnToolsVersion = 7.1;
@@ -405,7 +406,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Tip Calculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Tip-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,7 +419,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Tip Calculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Tip-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -490,6 +495,7 @@
 				DD6689541C1A47CA00ABF4B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD6689551C1A47CA00ABF4B8 /* Build configuration list for PBXNativeTarget "Tip CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +504,7 @@
 				DD6689571C1A47CA00ABF4B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD6689581C1A47CA00ABF4B8 /* Build configuration list for PBXNativeTarget "Tip CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +513,7 @@
 				DD66895A1C1A47CA00ABF4B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

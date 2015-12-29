@@ -14,13 +14,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
+    @IBOutlet weak var currencyLabel: UILabel!
+    
+    // Get local currency symbol
+    let currencySymbol = NSLocale.currentLocale().objectForKey(NSLocaleCurrencySymbol) as! String
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        tipLabel.text = "$0.00"
-        totalLabel.text = "$0.00"
-        }
+    }
     
     override func viewDidAppear(animated: Bool) {
         let defaults = NSUserDefaults.standardUserDefaults()
@@ -30,6 +32,13 @@ class ViewController: UIViewController {
         tipControl.selectedSegmentIndex = index
 
         calculateTipAndTotal(tipPercentages[index])
+        
+        
+        // Set cursor at billField on open
+        self.billField.becomeFirstResponder()
+        
+        // Set currency label from locale info
+        currencyLabel.text = currencySymbol
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,8 +60,9 @@ class ViewController: UIViewController {
         let tip = billAmount * percentage
         let total = tip + billAmount
         
-        tipLabel.text = String(format: "$%.2f", tip)
-        totalLabel.text = String(format: "$%.2f", total)
+        
+        tipLabel.text = currencySymbol + String(format: " %.2f", tip)
+        totalLabel.text = currencySymbol + String(format: "% .2f", total)
     }
 
     @IBAction func onTap(sender: AnyObject) {
