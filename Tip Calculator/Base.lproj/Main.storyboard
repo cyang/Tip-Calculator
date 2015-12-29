@@ -110,9 +110,10 @@
                                 <rect key="frame" x="106" y="280" width="194" height="43"/>
                                 <animations/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="194" id="L2P-PF-pqc"/>
                                     <constraint firstAttribute="height" constant="43" id="WMi-Y8-l2W"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -149,13 +150,13 @@
                             <constraint firstItem="9eU-3D-Kyz" firstAttribute="leading" secondItem="GaR-Sd-XT0" secondAttribute="leading" id="PKA-PB-bKZ"/>
                             <constraint firstItem="I6u-LO-9Va" firstAttribute="centerX" secondItem="Mdr-Fg-gC9" secondAttribute="centerX" id="PNO-YD-tMK"/>
                             <constraint firstItem="GaR-Sd-XT0" firstAttribute="top" secondItem="I6u-LO-9Va" secondAttribute="bottom" constant="15" id="RVo-GR-LTh"/>
-                            <constraint firstItem="GaR-Sd-XT0" firstAttribute="firstBaseline" secondItem="Gzz-Ex-0YG" secondAttribute="firstBaseline" id="SKq-VQ-d85"/>
+                            <constraint firstItem="GaR-Sd-XT0" firstAttribute="firstBaseline" secondItem="Gzz-Ex-0YG" secondAttribute="firstBaseline" constant="5" id="SKq-VQ-d85"/>
                             <constraint firstItem="5ng-Xw-AMK" firstAttribute="top" secondItem="9eU-3D-Kyz" secondAttribute="bottom" constant="200" id="VeS-Bs-wha"/>
                             <constraint firstItem="I6u-LO-9Va" firstAttribute="leading" secondItem="GaR-Sd-XT0" secondAttribute="leading" id="Vii-Ny-qdp"/>
                             <constraint firstItem="I6u-LO-9Va" firstAttribute="top" secondItem="pYb-n3-PIA" secondAttribute="bottom" constant="38" id="YIm-cQ-JV7"/>
                             <constraint firstItem="RML-aL-tXd" firstAttribute="top" secondItem="055-Rh-SBu" secondAttribute="bottom" constant="57" id="dyf-t7-w9g"/>
                             <constraint firstItem="Mdr-Fg-gC9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="13" id="fjR-Lr-b1b"/>
-                            <constraint firstItem="Gzz-Ex-0YG" firstAttribute="baseline" secondItem="GaR-Sd-XT0" secondAttribute="baseline" id="i7E-1d-u80"/>
+                            <constraint firstItem="Gzz-Ex-0YG" firstAttribute="baseline" secondItem="GaR-Sd-XT0" secondAttribute="baseline" constant="1" id="i7E-1d-u80"/>
                             <constraint firstItem="GaR-Sd-XT0" firstAttribute="trailing" secondItem="F9G-12-5BK" secondAttribute="trailing" id="k5r-pj-fCd"/>
                             <constraint firstItem="RML-aL-tXd" firstAttribute="baseline" secondItem="WWh-7U-neI" secondAttribute="baseline" id="kP0-li-xpx"/>
                             <constraint firstItem="RML-aL-tXd" firstAttribute="leading" secondItem="WWh-7U-neI" secondAttribute="trailing" constant="5" id="pB1-12-c2T"/>
@@ -273,6 +274,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4rl-GE-vBm"/>
+        <segue reference="FJ5-Oc-H2f"/>
     </inferredMetricsTieBreakers>
 </document>

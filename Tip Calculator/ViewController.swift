@@ -60,9 +60,13 @@ class ViewController: UIViewController {
         let tip = billAmount * percentage
         let total = tip + billAmount
         
+        // Set format for currency symbol and thousands separator
+        let formatter = NSNumberFormatter()
+        formatter.numberStyle = .CurrencyStyle
+        formatter.maximumFractionDigits = 2;
         
-        tipLabel.text = currencySymbol + String(format: " %.2f", tip)
-        totalLabel.text = currencySymbol + String(format: "% .2f", total)
+        tipLabel.text = formatter.stringFromNumber(tip)!
+        totalLabel.text = formatter.stringFromNumber(total)!
     }
 
     @IBAction func onTap(sender: AnyObject) {
